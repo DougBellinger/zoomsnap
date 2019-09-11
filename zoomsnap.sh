@@ -1,5 +1,6 @@
 #!/bin/bash
 id=$(xdotool search --name "Participant ID")
+#TODO if the window isn't there, start the zoom conference
 active=$(xdotool getactivewindow)
 wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
 wmctrl -i -r $id -b remove,maximized_vert,maximized_horz
